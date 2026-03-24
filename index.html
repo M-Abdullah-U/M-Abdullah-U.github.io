@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Abdullah Usman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { deadpan: ['Inter', 'sans-serif'], artsy: ['Newsreader', 'serif'], }, colors: { bgMain: '#050505', bgSubtle: '#111111', borderSubtle: '#1f1f1f', richBlue: '#0033ff', textMain: '#f0f0f0', textMuted: '#666666' } } } }
+    </script>
+    <style>
+        .petal-pill {
+            border-radius: 24px 6px 24px 6px;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-bgMain text-textMain font-deadpan h-screen w-screen overflow-hidden flex selection:bg-richBlue selection:text-white">
+
+    <aside class="w-72 h-full border-r border-borderSubtle flex flex-col justify-between p-10">
+        <div>
+            <h1 class="text-xl font-medium tracking-tight mb-16 text-textMain leading-snug">
+                Muhammad<br>Abdullah Usman
+            </h1>
+            <nav class="flex flex-col gap-4 text-sm font-medium text-textMuted">
+                <a href="index.html" class="text-richBlue">home</a>
+                <a href="projects.html" class="hover:text-textMain transition-colors">projects</a>
+                <a href="honors.html" class="hover:text-textMain transition-colors">honors</a>
+                <a href="contact.html" class="hover:text-textMain transition-colors">contact</a>
+                <span class="mt-4 italic font-artsy text-xl tracking-widest text-borderSubtle">...</span>
+            </nav>
+        </div>
+        <a href="cv.pdf" target="_blank"
+            class="petal-pill bg-richBlue hover:bg-blue-700 text-white transition-all duration-300 text-sm font-medium py-3 px-6 text-center tracking-wide">Download
+            CV</a>
+    </aside>
+
+    <main class="flex-1 h-full flex flex-col justify-center px-16 lg:px-32 relative">
+        <div class="max-w-3xl">
+            <h2 class="text-5xl lg:text-6xl font-artsy italic tracking-tight text-textMain mb-8 leading-tight">
+                I build performant systems and intelligent machine learning models.
+            </h2>
+            <p class="text-textMuted text-lg leading-relaxed mb-10 max-w-xl">
+                Year 12 student in Doha. Building machine learning applications and data infrastructure with intent and
+                precision.
+            </p>
+            <div class="flex flex-wrap gap-3 mb-12">
+                <span
+                    class="bg-bgSubtle text-textMuted px-3 py-1.5 rounded text-xs font-medium tracking-wide">Python</span>
+                <span
+                    class="bg-bgSubtle text-textMuted px-3 py-1.5 rounded text-xs font-medium tracking-wide">Haskell</span>
+                <span
+                    class="bg-bgSubtle text-textMuted px-3 py-1.5 rounded text-xs font-medium tracking-wide">TensorFlow</span>
+                <!-- <span class="bg-bgSubtle text-textMuted px-3 py-1.5 rounded text-xs font-medium tracking-wide">Compilers</span> -->
+            </div>
+            <div class="flex gap-8 text-sm font-medium">
+                <a href="https://github.com/M-Abdullah-U/" target="_blank"
+                    class="text-textMuted hover:text-textMain transition-colors">github ↗</a>
+                <a href="https://www.linkedin.com/in/abdullah-usman-49a09b3b6/" target="_blank"
+                    class="text-textMuted hover:text-textMain transition-colors">linke

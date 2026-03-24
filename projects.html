@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - M. Abdullah Usman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { deadpan: ['Inter', 'sans-serif'], artsy: ['Newsreader', 'serif'], }, colors: { bgMain: '#050505', bgSubtle: '#111111', borderSubtle: '#1f1f1f', richBlue: '#0033ff', textMain: '#f0f0f0', textMuted: '#666666' } } } }
+    </script>
+    <style>
+        .petal-pill {
+            border-radius: 24px 6px 24px 6px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1f1f1f;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #333;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-bgMain text-textMain font-deadpan h-screen w-screen overflow-hidden flex selection:bg-richBlue selection:text-white">
+
+    <aside class="w-72 h-full border-r border-borderSubtle flex flex-col justify-between p-10 shrink-0">
+        <div>
+            <h1 class="text-xl font-medium tracking-tight mb-16 text-textMain leading-snug">Muhammad<br>Abdullah Usman
+            </h1>
+            <nav class="flex flex-col gap-4 text-sm font-medium text-textMuted">
+                <a href="index.html" class="hover:text-textMain transition-colors">home</a>
+                <a href="projects.html" class="text-richBlue">projects</a>
+                <a href="honors.html" class="hover:text-textMain transition-colors">honors</a>
+                <a href="contact.html" class="hover:text-textMain transition-colors">contact</a>
+                <span class="mt-4 italic font-artsy text-xl tracking-widest text-borderSubtle">...</span>
+            </nav>
+        </div>
+        <a href="cv.pdf" target="_blank"
+            class="petal-pill bg-richBlue hover:bg-blue-700 text-white transition-all duration-300 text-sm font-medium py-3 px-6 text-center tracking-wide">Download
+            CV</a>
+    </aside>
+
+    <main class="flex-1 h-full flex flex-col px-16 lg:px-32 py-20 relative overflow-y-auto">
+        <div class="max-w-3xl w-full">
+            <h2 class="text-4xl font-artsy italic tracking-tight text-textMain mb-12">selected works</h2>
+            <div class="flex flex-col gap-10">
+
+                <!-- 
+                <div class="border-b border-borderSubtle pb-8">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-xl font-semibold tracking-tight text-textMain">Mini-C Compiler</h3>
+                        <a href="https://github.com/M-Abdullah-U/" target="_blank" class="text-xs text-textMuted hover:text-richBlue transition-colors">view code ↗</a>
+                    </div>
+                    <p class="text-textMuted text-sm leading-relaxed mb-4">
+                        Developed a comprehensive compiler for "Mini-C" from the ground up. Implemented a Lexical Analyzer, an AST-generating Parser, and Semantic Analysis, utilizing the LLVM framework as a backend to generate optimized machine-code binaries.
+                    </p>
+                    <div class="flex justify-between items-center mt-2">
+                        <div class="flex gap-2">
+                            <span class="bg-bgSubtle text-textMuted px-2 py-1 rounded text-xs">Haskell</span>
+                            <span class="bg-bgSubtle text-textMuted px-2 py-1 rounded text-xs">LLVM</span>
+                        </div>
+                        <a href="#" class="text-xs font-artsy italic text-textMuted hover:text-textMain transition-colors tracking-wide">read more →</a>
+                    </div>
+                </div>
+                -->
+
+                <div class="border-b border-borderSubtle pb-8">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-xl font-semibold tracking-tight text-textMain">Imperial Roman Coin Classifier
+                        </h3>
+                        <a href="https://notkosmo-roman-coin-classifier.hf.space" target="_blank"
+                            class="text-xs text-textMuted hover:text-richBlue transition-colors">live demo ↗</a>
+                    </div>
+                    <p class="text-textMuted text-sm leading-relaxed mb-4">
+                        Engineered a web scraping pipeline to autonomously compile a dataset of ~3,000 ancient Roman
+                        coin images, and designed a CNN achieving 85% classification accuracy.
+                    </p>
+                    <div class="flex justify-between items-center mt-2">
+                        <div class="flex gap-2">
+                            <span class="bg-bgSubtle text-textMuted px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-bgSubtle text-textMuted px-2 py-1 rounded text-xs">TensorFlow</span>
+                        </div>
+                        <a href="#"
+                            class="text-xs font-artsy italic text-textMuted hover:text-textMain transition-colors tracking-wide">read
+                            more →</a>
+                    </div>
+                </div>
+
+                <div class="pb-8">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-xl font-semibold tracking-tight text-textMain">QuickSearch</h3>
+                        <a href="https://notkosmo-quicksearch.hf.space" target="_blank"
+                            class="text-xs text-textMuted hover:text-richBlue transition-colors">live demo ↗</a>
+                    </div>
+                    <p class="text-textMuted text-sm leading-relaxed mb-4">
+                        Automated pipeline to scrape and index 3,000+ Cambridge past papers, creating a searchable
+                        database to locate exact questions based on keyword intersections.
+                    </p>
+                    <div class="flex justify-between items-center mt-2">
+                        <div class="flex gap-2">
+                            <span class="bg-bgSubtle text-textMuted px-2 py-1 rounded text-xs">Python</span>
+                            <span class="bg-bgSubtle text-textMuted px-2 py-1 rounded text-xs">Automation</span>
+                        </div>
+                        <a href="#"
+                            class="text-xs font-artsy italic text-textMuted hover:text-textMain transition-colors tracking-wide">read
+                            more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
